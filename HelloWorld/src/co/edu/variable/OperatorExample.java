@@ -65,5 +65,6 @@ public class OperatorExample {
 		System.out.println("거스름돈 오백원 : " + min%10000%5000%1000/500 + "장");
 		System.out.println("거스름돈 백원 : " + min%10000%5000%1000%500/100 + "장");
 		System.out.println("거스름돈 오십원 : " + min%10000%5000%1000%500%100/50 + "장");
+		System.out.println("거스름돈 오십원 : " + min%10000%5000%1000%500%100%50/10 + "장");
 	}
 }
