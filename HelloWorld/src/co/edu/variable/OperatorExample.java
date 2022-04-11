@@ -1,7 +1,10 @@
 package co.edu.variable;
 
+import java.util.Scanner;
+
 public class OperatorExample {
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 		// 나머지: %
 		// 6/4 => 몫: 1, 나머지: 2
 //		int result = 6 / 4;
@@ -46,7 +49,21 @@ public class OperatorExample {
 		System.out.println("물건의 부가세는 " + m1/m2 + "원");
 		System.out.println("거스름돈은 " + (max - m1) + "원");
 		
+		int myMoney = 0;
+		System.out.println("내가 가진 금액");
+		myMoney = scanner.nextInt();
 		
-
+		int mon = 0;
+		System.out.println("물건 가격은");
+		mon = scanner.nextInt();
+		
+		int min = (myMoney - mon);
+		
+		System.out.println("거스름돈 만원 : " + min/10000 + "장");
+		System.out.println("거스름돈 오천원 : " + min%10000/5000 + "장");
+		System.out.println("거스름돈 천원 : " + min%10000%5000/1000 + "장");
+		System.out.println("거스름돈 오백원 : " + min%10000%5000%1000/500 + "장");
+		System.out.println("거스름돈 백원 : " + min%10000%5000%1000%500/100 + "장");
+		System.out.println("거스름돈 오십원 : " + min%10000%5000%1000%500%100/50 + "장");
 	}
 }
