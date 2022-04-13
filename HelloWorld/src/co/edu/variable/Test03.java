@@ -25,9 +25,9 @@ public class Test03 {
 		
 		
 		System.out.println("물건의 가격");
-		int price1 = scanner.nextInt();
-		System.out.println("내가 지불 할 금액");
 		int won1 = scanner.nextInt();
+		System.out.println("내가 지불 할 금액");
+		int price1 = scanner.nextInt();
 		int surtax1 = 10;
 		
 		System.out.println("부가세 : " + price/surtax);
